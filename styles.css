@@ -1,0 +1,96 @@
+/* General Game styling */
+body {
+  font-family: Helvetica,  serif;
+  text-align: center;
+  background: linear-gradient(45deg, #f3f3f3, #dcdcdc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Game container */
+.container {
+  background: rgb(87, 157, 157);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Color box */
+#colorBox {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  border: 1px solid #453535;
+  border-radius: 1.5rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Game status */
+#gameStatus {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Animations */
+.correct {
+  color: green;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.wrong {
+  color: red;
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 2; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  button {
+      width: 70px;
+      height: 35px;
+      font-size: 14px;
+  }
+
+  #colorBox {
+      width: 120px;
+      height: 120px;
+  }
+}
