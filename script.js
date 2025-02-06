@@ -6,7 +6,7 @@ const scoreDisplay = document.getElementById("score");
 const newGameButton = document.getElementById("newGameButton");
 
 // Predefined colors
-const colors = ["yellow", "skyblue", "gray", "brown", "purple", "orange"];
+const colors = ["yellow", "red", "teal", "purple", "skyblue", "orange"];
 
 let targetColor = "";
 let score = 0;

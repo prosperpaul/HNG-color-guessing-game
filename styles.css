@@ -2,7 +2,7 @@
 body {
   font-family: Helvetica,  serif;
   text-align: center;
-  background: linear-gradient(45deg, #f3f3f3, #dcdcdc);
+  background: linear-gradient(45deg, #fff0f5, #dcdcdc);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@ body {
 
 /* Game container */
 .container {
-  background: rgb(87, 157, 157);
+  background: #e1b88e;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
